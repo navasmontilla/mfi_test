@@ -1,0 +1,10 @@
+# Instalaciones de fluidos
+```{tableofcontents}
+```
+
+[APUNTES DE CLASE](https://github.com/navasmontilla/site/blob/master/teaching/5.Instalaciones_II.pdf) 
+
+La mayor parte del Tema 5 se centra en el estudio de flujo presurizado en conductos. En la primera parte de esta unidad se estudia el flujo en conductos circulares. Primeramente, se aplican las ecuaciones integrales de conservación de la masa,  momento lineal y energía a este problema. Poniendo en práctica lo aprendido en el Tema 4 sobre análisis dimensional, se determinan los números adimensionales relevantes en flujo en conductos. Con todo lo anterior, se muestra cómo obtener las expresiones para calcular la pérdida de carga en conductos. Se exponen las diferencias entre flujo laminar y turbulento en conductos y se detallan las expresiones matemáticas que permiten calcular la pérdida de carga en los mismos dependiendo del régimen del flujo. Además, se introduce el diagrama de Moody para este propósito. Finalmente, se define el concepto de pérdidas de carga menores (o singulares) y se muestra cómo calcular las pérdidas de carga totales en presencia de elementos lineales y de elementos singulares.
+
+Una vez estudiado el flujo en un conducto, en la segunda parte de la Unidad 5 se generaliza el análisis a conductos que incluyen máquinas de impulsión, introduciendo así las instalaciones de fluidos. Esta segunda parte corresponde con el tema escogido, cuyo objetivo es una introducción al cálculo de instalaciones de fluidos. Para ello, primero se proporcionarán las características básicas de una instalación, así como de una máquina de impulsión (bomba o ventilador). Se mostrará cómo aplicar las ecuaciones de conservación de la masa y la energía al flujo en un conducto con una máquina de impulsión para obtener las ecuaciones de balance de energía. Se definirán los conceptos de *curva de la instalación* y *curva de la bomba*, así como el de *punto de operación* de la instalación. Se mostrará cómo calcular el punto de operación de una instalación y cómo trabajar con instalaciones en serie y en paralelo.
+

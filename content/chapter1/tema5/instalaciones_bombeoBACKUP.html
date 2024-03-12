@@ -1,0 +1,1363 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Instalaciones de bombeo y ventilación &#8212; Mecanica de Fluidos Interactiva</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=796348d33e8b1d947c94" rel="stylesheet">
+<link href="../../../_static/styles/bootstrap.css?digest=796348d33e8b1d947c94" rel="stylesheet">
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=796348d33e8b1d947c94" rel="stylesheet">
+
+  
+  <link href="../../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=796348d33e8b1d947c94" rel="stylesheet">
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2">
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=4ec06e9971c5264fbd345897d5258098f11cc577" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/myfile.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=796348d33e8b1d947c94">
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=796348d33e8b1d947c94">
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/clipboard.min.js"></script>
+    <script src="../../../_static/copybutton.js"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=8bf782fb4ee92b3d3646425e50f299c4e1fd152d"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/chapter1/tema5/instalaciones_bombeoBACKUP';</script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="docsearch:language" content="en">
+  </head>
+  
+  
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="180" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  
+  <input type="checkbox" class="sidebar-toggle" name="__primary" id="__primary">
+  <label class="overlay overlay-primary" for="__primary"></label>
+
+  
+  <input type="checkbox" class="sidebar-toggle" name="__secondary" id="__secondary">
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+      
+<form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+    </div>
+  </div>
+
+  
+  <nav class="bd-header navbar navbar-expand-lg bd-navbar" id="navbar-main"><div class="bd-header__inner bd-page-width">
+  <label class="sidebar-toggle primary-toggle" for="__primary">
+      <span class="fa-solid fa-bars"></span>
+  </label>
+  <div id="navbar-start">
+    
+    
+  
+
+
+<a class="navbar-brand logo" href="../../../intro.html">
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <img src="../../../_static/logo_mfi.png" class="logo__image only-light" alt="Logo image">
+    <img src="../../../_static/logo_mfi.png" class="logo__image only-dark" alt="Logo image">
+  
+  
+</a>
+    
+  </div>
+
+  
+  <div class="col-lg-9 navbar-header-items">
+    <div id="navbar-center" class="mr-auto">
+      
+      <div class="navbar-center-item">
+        <nav class="navbar-nav">
+    <p class="sidebar-header-items__title" role="heading" aria-level="1" aria-label="Site Navigation">
+        Site Navigation
+    </p>
+    <ul id="navbar-main-elements" class="navbar-nav">
+        
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../tema1/tema1.html">
+                        Introducción a la mecánica de fluidos
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../tema2/tema2.html">
+                        Ecuaciones fundamentales
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../tema3/tema3.html">
+                        Flujos canónicos
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../tema4/tema4.html">
+                        Análisis dimensional
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="tema5.html">
+                        Instalaciones de fluidos
+                      </a>
+                    </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../biblio.html">
+                        Bibliografía
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../final.html">
+                        Sobre este libro
+                      </a>
+                    </li>
+                
+                </div>
+            </div>
+            
+    </ul>
+</nav>
+      </div>
+      
+    </div>
+
+    <div id="navbar-end">
+      
+        <div class="navbar-end-item navbar-persistent--container">
+          
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-toggle="tooltip">
+  <i class="fa-solid fa-magnifying-glass"></i>
+</button>
+        </div>
+      
+      
+      <div class="navbar-end-item">
+        <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+</button>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+      </ul>
+      </div>
+      
+    </div>
+  </div>
+
+
+  
+  
+    <div class="navbar-persistent--mobile">
+<button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-toggle="tooltip">
+  <i class="fa-solid fa-magnifying-glass"></i>
+</button>
+    </div>
+  
+
+  
+  <label class="sidebar-toggle secondary-toggle" for="__secondary">
+      <span class="fa-solid fa-outdent"></span>
+  </label>
+  
+
+</div>
+  </nav>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+      
+      <div class="navbar-center-item">
+        <nav class="navbar-nav">
+    <p class="sidebar-header-items__title" role="heading" aria-level="1" aria-label="Site Navigation">
+        Site Navigation
+    </p>
+    <ul id="navbar-main-elements" class="navbar-nav">
+        
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../tema1/tema1.html">
+                        Introducción a la mecánica de fluidos
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../tema2/tema2.html">
+                        Ecuaciones fundamentales
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../tema3/tema3.html">
+                        Flujos canónicos
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../tema4/tema4.html">
+                        Análisis dimensional
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="tema5.html">
+                        Instalaciones de fluidos
+                      </a>
+                    </li>
+                
+            <div class="nav-item dropdown">
+                <button class="btn dropdown-toggle nav-item" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More
+                </button>
+                <div class="dropdown-menu">
+                    
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../biblio.html">
+                        Bibliografía
+                      </a>
+                    </li>
+                
+
+                    <li class="nav-item">
+                      <a class="nav-link nav-internal" href="../../../final.html">
+                        Sobre este libro
+                      </a>
+                    </li>
+                
+                </div>
+            </div>
+            
+    </ul>
+</nav>
+      </div>
+      
+      </div>
+    
+
+    
+    
+    <div class="sidebar-header-items__end">
+      
+      <div class="navbar-end-item">
+        <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+</button>
+      </div>
+      
+      <div class="navbar-end-item">
+        <ul id="navbar-icon-links" class="navbar-nav" aria-label="Icon Links">
+      </ul>
+      </div>
+      
+    </div>
+    
+  </div>
+
+  
+  <div class="sidebar-start-items sidebar-primary__section">
+    <div class="sidebar-start-items__item">
+  
+
+
+<a class="navbar-brand logo" href="../../../intro.html">
+
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <img src="../../../_static/logo_mfi.png" class="logo__image only-light" alt="Logo image">
+    <img src="../../../_static/logo_mfi.png" class="logo__image only-dark" alt="Logo image">
+  
+  
+</a>
+    </div>
+    <div class="sidebar-start-items__item">
+<form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+    </div>
+    <div class="sidebar-start-items__item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../../intro.html">
+                    Bienvenido a Mecánica de fluidos interactiva
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Contenidos</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../tema1/tema1.html">1. Introducción a la mecánica de fluidos</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../tema1/introduccion.html">1.1. Conceptos básicos</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tema1/descripcion_campo.html">1.2. Descripción del campo fluido</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tema1/analisis_diferencial.html">1.3. Análisis diferencial del campo fluido</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tema1/lineas_caracteristicas.html">1.4. Líneas características del flujo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../tema1/ley_newton.html">1.5. Ley de Newton de la viscosidad</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../tema2/tema2.html">2. Ecuaciones fundamentales</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../tema3/tema3.html">3. Flujos canónicos</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../tema3/perfiles_presion.html">3.1. Cálculo de perfiles de presion</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../tema4/tema4.html">4. Análisis dimensional</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="tema5.html">5. Instalaciones de fluidos</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="flujo_conductos.html">5.1. Flujo en conductos circulares</a></li>
+<li class="toctree-l2"><a class="reference internal" href="instalaciones_bombeo.html">5.2. Instalaciones de bombeo y ventilación</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Para saber más...</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../../biblio.html">Bibliografía</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../final.html">Sobre este libro</a></li>
+</ul>
+
+    </div>
+</nav>
+    </div>
+  </div>
+  
+
+  
+  <div class="sidebar-end-items sidebar-primary__section">
+    <div class="sidebar-end-items__item">
+    </div>
+  </div>
+
+  
+  <div id="rtd-footer-container"></div>
+
+      </div>
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+        <div class="bd-content">
+          <div class="bd-article-container">
+            
+            <div class="bd-header-article">
+                
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        <label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" data-toggle="tooltip" data-placement="right" title="Toggle primary sidebar">
+            <span class="fa-solid fa-bars"></span>
+        </label>
+    </div>
+    <div class="header-article__right">
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      <li><a href="https://colab.research.google.com/github/executablebooks/jupyter-book/blob/master/docs/content/chapter1/tema5/instalaciones_bombeoBACKUP.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Colab"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img src="../../../_static/images/logo_colab.png">
+  </span>
+<span class="btn__text-container">Colab</span>
+</a>
+</a>
+      
+  </ul>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<div class="dropdown dropdown-repository-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm dropdown-item"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">repository</span>
+</a>
+</a>
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fcontent/chapter1/tema5/instalaciones_bombeoBACKUP.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm dropdown-item"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">open issue</span>
+</a>
+</a>
+      
+  </ul>
+</div>
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      <li><a href="../../../_sources/content/chapter1/tema5/instalaciones_bombeoBACKUP.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</a>
+      
+      <li>
+<button onclick="printPdf(this)"
+  class="btn btn-sm dropdown-item"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</a>
+      
+  </ul>
+</div>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary" data-toggle="tooltip" data-placement="left" title="Toggle secondary sidebar">
+            <span class="fa-solid fa-list"></span>
+        </label>
+    </div>
+</div>
+            </div>
+            
+            
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Instalaciones de bombeo y ventilación</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduccion">
+   Introducción
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#balance-energetico-en-la-instalacion">
+   Balance energético en la instalación
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#punto-de-operacion">
+   Punto de operación
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#curvas-caracteristicas-de-la-bomba">
+   Curvas características de la bomba
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#aplicacion-realista">
+   Aplicación realista
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+            <article class="bd-article" role="main">
+              
+  <section id="instalaciones-de-bombeo-y-ventilacion">
+<h1>Instalaciones de bombeo y ventilación<a class="headerlink" href="#instalaciones-de-bombeo-y-ventilacion" title="Permalink to this heading">#</a></h1>
+<section id="introduccion">
+<h2>Introducción<a class="headerlink" href="#introduccion" title="Permalink to this heading">#</a></h2>
+<p>En este capítulo se generaliza el análisis de flujo en conductos realizado anteriormente para abordar el cálculo de instalaciones de fluidos. En particular, este capítulo se centrará en el estudio de <strong>instalaciones de bombeo y ventilación</strong> (con flujo presurizado), considerando flujo incompresible.</p>
+<p>El objetivo de las instalaciones de bombeo es el transporte de un fluido en estado líquido. Las instalaciones de ventilación tienen el mismo objetivo, pero estando el fluido en estado gaseoso. Para vencer las pérdidas de energía por disipación, así como los gradientes de presión adversos y las variaciones de altura, habitualmente es necesario proporcionar energía al fluido mediante una <strong>máquina de impulsión</strong>. En instalaciones de bombeo, las máquinas de impulsión son bombas hidráulicas, mientras que en instalaciones de ventilación son ventiladores.</p>
+<p>Una instalación de bombeo o ventilación se compone de los siguientes elementos:</p>
+<ul class="simple">
+<li><p>Máquinas de impulsión (bomba o ventilador)</p></li>
+<li><p>Conductos o tuberías, también llamados líneas o tramos</p></li>
+<li><p>Elementos singulares (codos, cambios de sección, etc.)</p></li>
+<li><p>Elementos de regulación (válvulas)</p></li>
+<li><p>Depósitos (abiertos a la atmósfera o presurizados)</p></li>
+<li><p>Entradas y salidas</p></li>
+</ul>
+<p>Un ejemplo de instalación de bombeo en el que se detalla la representación esquemática de los elementos anteriores se muestra a continuación.</p>
+<figure class="align-default" id="cap5-fig1">
+<a class="reference internal image-reference" href="../../../_images/instala.png"><img alt="../../../_images/instala.png" src="../../../_images/instala.png" style="width: 450px;" /></a>
+<figcaption>
+<p><span class="caption-text">Ejemplo de una instalación de bombeo.</span><a class="headerlink" href="#cap5-fig1" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Las máquinas de impulsión de fluidos engloban dos categorías generales: las turbomáquinas y las máquinas de desplazamiento positivo, cuya principal diferencia es que las primeras son de flujo continuo y las segundas no. A su vez, las turbomáquinas se dividen en turbomáquinas hidráulicas (bombas) y turbomáquinas térmicas (soplantes y compresores). En este capítulo consideraremos líquidos o gases bajo la hipótesis de flujo incompresible, por lo que nos centraremos en <strong>turbomáquinas hidráulicas</strong>: bombas y ventiladores.</p>
+<p>En una turbomáquina, la transferencia de energía de la máquina al fluido se realiza en un elemento giratorio compuesto de álabes llamado <strong>rodete</strong>. Dependiendo de cómo se mueve el fluido en relación con el rodete, podemos distinguir entre máquinas axiales, radiales y mixtas. Un ejemplo de una máquina radial es la bomba centrífuga de la figura inferior. En este tipo de bomba, el fluido entra por el centro del rodete y es impulsado por éste en dirección radial hasta la voluta (carcasa exterior de la bomba), que conduce el fluido hasta la salida.</p>
+<figure class="align-default" id="cap5-fig2">
+<a class="reference internal image-reference" href="../../../_images/bombas.png"><img alt="../../../_images/bombas.png" src="../../../_images/bombas.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Vista exterior (izquierda) e interior (derecha) de una bomba hidráulica centrífuga.</span><a class="headerlink" href="#cap5-fig2" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p><a class="reference external" href="https://modelviewer.dev/">https://modelviewer.dev/</a></p>
+</section>
+<section id="balance-energetico-en-la-instalacion">
+<h2>Balance energético en la instalación<a class="headerlink" href="#balance-energetico-en-la-instalacion" title="Permalink to this heading">#</a></h2>
+<p>Para obtener las ecuaciones de balance energético en instalaciones de fluidos aplicaremos  las leyes fundamentales de conservación  en forma integral estudiadas en el tema 2. Para realizar este análisis, consideraremos una instalación formada por  un conducto de aspiración, la máquina de impulsión y un  conducto de impulsión. Para simplificar, consideraremos una bomba como máquina de impulsión. El resultado para un ventilador sería el mismo. El volumen de control (VC) utilizado se muestra en la figura inferior, éste excluye los álabes (rodete). La superficie de control (SC) se compone de la superficie de entrada, <span class="math notranslate nohighlight">\(S_1\)</span>, la superficie de salida, <span class="math notranslate nohighlight">\(S_2\)</span>, la superficie de las paredes, <span class="math notranslate nohighlight">\(S_{paredes}\)</span>, y la superficie de los álabes, <span class="math notranslate nohighlight">\(S_a\)</span>, es decir</p>
+<figure class="align-default" id="id1">
+<a class="reference internal image-reference" href="../../../_images/vc_0.png"><img alt="../../../_images/vc_0.png" src="../../../_images/vc_0.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-text">Dominio de estudio real (izquierda) y su representación esquemática (derecha) en la que se representa el volumen de control  utilizado (línea de puntos) para aplicar las ecuaciones integrales. El VC excluye el rodete (en rojo).</span><a class="headerlink" href="#id1" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>La  <strong>ecuación de conservación de la energía mecánica</strong> aplicada al volumen de control es:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-7cb9dd20-63a2-4d1c-947f-000736959d83">
+<span class="eqno">()<a class="headerlink" href="#equation-7cb9dd20-63a2-4d1c-947f-000736959d83" title="Permalink to this equation">#</a></span>\[\begin{multline}\label{eq:emec}
+    \underbrace{\frac{d}{dt}\int_{VC} \rho \left(\frac{v^2}{2}+gz  \right)dV}_{I} +  \underbrace{\int_{SC} \rho \left( \frac{v^2}{2}+gz  \right)(\vec{\mathbf{v}}- \vec{\mathbf{v}}_c )\cdot \hat{\mathbf{n}}dS}_{II} \\ =
+    \underbrace{\int_{SC} \left(\tilde{\boldsymbol {\tau}} \cdot \hat{\mathbf{n}}\right)\cdot \vec{\mathbf{v}}dS}_{III}+\underbrace{\int_{VC} p\nabla\cdot\vec{\mathbf{v}}  dV}_{IV} - \underbrace{\int_{VC} \Phi_v  dV}_{V}
+\end{multline}\]</div>
+<p>donde:</p>
+<ul>
+<li><p>I: Es la variación temporal de energía mecánica en el VC, que en estacionario es 0:</p>
+<div class="math notranslate nohighlight">
+\[\frac{d}{dt}\int_{VC} \rho \left( \frac{v^2}{2}+gz  \right)dV=0\]</div>
+</li>
+<li><p>II: Son los flujos de entrada y salida de energía mecánica:</p>
+<div class="math notranslate nohighlight">
+\[\int_{SC} \rho \left( \frac{v^2}{2}+gz  \right)(\vec{\mathbf{v}}- \vec{\mathbf{v}}_c )\cdot \hat{\mathbf{n}}dS = \rho Q \left[ \left( \frac{v^2}{2}+gz  \right)_2  - \left( \frac{v^2}{2}+gz  \right)_1 \right]\]</div>
+</li>
+<li><p>III: Es la potencia transmitida al fluido a través de las superficies de control:</p>
+<div class="math notranslate nohighlight">
+\[\int_{SC} \left(\tilde{\boldsymbol {\tau}} \cdot \hat{\mathbf{n}}\right)\cdot \vec{\mathbf{v}}dS = Qp_1-Qp_2 + \dot{W}_{a\rightarrow f} \]</div>
+</li>
+<li><p>IV: Es la potencia de las fuerzas de presión en procesos reversibles de expansión y compresión, que para un flujo incompresible es 0:</p>
+<div class="math notranslate nohighlight">
+\[\int_{VC} p\cancelto{0}{\nabla\cdot\vec{\mathbf{v}}}  dV = 0\]</div>
+</li>
+<li><p>V: Es la potencia de disipación viscosa:</p>
+<div class="math notranslate nohighlight">
+\[\int_{VC} \Phi_v  dV \geq 0\]</div>
+<p>donde <span class="math notranslate nohighlight">\( \Phi_v=\tilde{\boldsymbol {\tau}}_v:\nabla\vec{\mathbf{v}}\)</span> es la función de disipación de Rayleigh.</p>
+</li>
+</ul>
+<p>Agrupando los términos anteriores (<span class="math notranslate nohighlight">\(I+II=III+IV+V\)</span>) obtenemos:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-a61826d7-a0b6-447c-a145-32e9c7deae3e">
+<span class="eqno">()<a class="headerlink" href="#equation-a61826d7-a0b6-447c-a145-32e9c7deae3e" title="Permalink to this equation">#</a></span>\[\begin{equation}\label{eq:emec2}
+\boxed{
+    \textcolor[RGB]{0, 152, 46}{ \rho Q \left[ \left( \frac{v^2}{2}+\frac{p}{\rho}+gz  \right)_2  - \left( \frac{v^2}{2}+\frac{p}{\rho}+gz  \right)_1 \right] } = \textcolor[RGB]{0, 0, 255}{ \dot{W}_{a\rightarrow f} } - \textcolor[RGB]{255, 100, 0}{\int_{VC} \Phi_v  dV}
+     }
+\end{equation}\]</div>
+<p>que indica que la ganancia de energía mecánica más energía de presión del flujo es igual a la diferencia entre el trabajo realizado por la máquina y las pérdidas por disipación. El término <span class="math notranslate nohighlight">\(\dot{W}_{a\rightarrow f}\)</span> es la potencia transferida de los álabes al fluido, que contabiliza la entrada neta de energía al flujo y se expresa como</p>
+<div class="amsmath math notranslate nohighlight" id="equation-9f8a635d-6bd6-4b51-94d7-5795dceb4cc1">
+<span class="eqno">()<a class="headerlink" href="#equation-9f8a635d-6bd6-4b51-94d7-5795dceb4cc1" title="Permalink to this equation">#</a></span>\[\begin{equation}
+    \dot{W}_{a\rightarrow f}=\int_{S_a} \left(\tilde{\boldsymbol {\tau}} \cdot \hat{\mathbf{n}}\right)\cdot \vec{\mathbf{v}}dS
+\end{equation}\]</div>
+<p>y está asociada a la fuerza que ejercen los álabes sobre el fluido</p>
+<div class="amsmath math notranslate nohighlight" id="equation-04f346a9-93ad-4a54-8934-8228b87e82d7">
+<span class="eqno">()<a class="headerlink" href="#equation-04f346a9-93ad-4a54-8934-8228b87e82d7" title="Permalink to this equation">#</a></span>\[\begin{equation}
+    \vec{\bf{F}}_{a\rightarrow f}=\int_{S_a} \tilde{\boldsymbol {\tau}} \cdot \hat{\mathbf{n}}dS
+\end{equation}\]</div>
+<p>A continuación se resumen los términos presentes en las ecuaciones de conservación de la energía total, mecánica e interna, con el fin de mostrar esquemáticamente los balances de energía para cada una de ellas. En la columna <em>Energía específica</em> se detalla la suma de las distintas formas de energía a tener en cuenta en los flujos de entrada y salida. Por otro lado, en las columnas  <em>Fuentes de energía</em> se detallan las distintas fuentes (<span class="math notranslate nohighlight">\(&gt;0\)</span>) o sumideros (<span class="math notranslate nohighlight">\(&lt;0\)</span>) de energía.</p>
+<p>La observación más relevante que se puede realizar en esta tabla es que, como se vio en el Tema 2, <strong>la disipación viscosa es una fuente de energía interna y un sumidero de energía mecánica</strong>. La dirección de dicho proceso no se puede invertir, ya que sino no se  satisfaría el Segundo Principio de la Termodinámica. En la ecuación de la energía total no participa la disipación viscosa, ya que es un mecanismo de transferencia de energía entre energía mecánica e interna.</p>
+<figure class="align-default" id="cap5-fig3">
+<a class="reference internal image-reference" href="../../../_images/balances.png"><img alt="../../../_images/balances.png" src="../../../_images/balances.png" style="width: 500px;" /></a>
+<figcaption>
+<p><span class="caption-text">Flujos de energía total, mecánica e interna, así como sus respectivas fuentes y sumideros.</span><a class="headerlink" href="#cap5-fig3" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="cap5-fig4">
+<a class="reference internal image-reference" href="../../../_images/vc_2.png"><img alt="../../../_images/vc_2.png" src="../../../_images/vc_2.png" style="width: 700px;" /></a>
+<figcaption>
+<p><span class="caption-text">Representación gráfica de los balances de energía mecánica e interna en el VC.</span><a class="headerlink" href="#cap5-fig4" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>La <strong>ecuación de conservación de la energía interna</strong> la escribimos como</p>
+<div class="amsmath math notranslate nohighlight" id="equation-b003aaef-f33f-459c-9b22-12536a642e64">
+<span class="eqno">()<a class="headerlink" href="#equation-b003aaef-f33f-459c-9b22-12536a642e64" title="Permalink to this equation">#</a></span>\[\begin{equation}\label{eq:eint}
+\boxed{
+    \textcolor[RGB]{0, 152, 46}{ \rho Q \left( e_2  - e_1 \right) } =  \textcolor[RGB]{255, 100, 0}{\int_{VC} \Phi_v  dV} - \textcolor[RGB]{255, 0, 0}{\dot{\mathcal{Q}}}
+     }
+\end{equation}\]</div>
+<p>y podemos utilizarla para estimar el calentamiento que sufre un fluido en una instalación. Sustituyendo <span class="math notranslate nohighlight">\(e=cT\)</span> donde <span class="math notranslate nohighlight">\(c\)</span> es el calor específico del fluido, obtenemos</p>
+<div class="amsmath math notranslate nohighlight" id="equation-f842697f-d635-4081-bbbc-15335f0e8935">
+<span class="eqno">()<a class="headerlink" href="#equation-f842697f-d635-4081-bbbc-15335f0e8935" title="Permalink to this equation">#</a></span>\[\begin{equation}
+     T_2  - T_1  =  \frac{1}{\rho c Q}\left( \textcolor[RGB]{255, 100, 0}{\int_{VC} \Phi_v  dV} + \textcolor[RGB]{255, 0, 0}{\dot{\mathcal{Q}}} \right)
+\end{equation}\]</div>
+<p>observando que el calentamiento es debido a la <strong>disipación viscosa</strong> (siempre positiva) y a los <strong>flujos de calor entre el fluido y el exterior</strong> (que serán cero, si está aislado, o negativos, si cede calor al exterior).</p>
+<div class="cell tag_hide-cell tag_margin docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell content</span>
+<span class="expanded">Hide code cell content</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="o">*</span>             <span class="c1"># Librería para trabajo simbólico</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>              <span class="c1"># Librería para cálculo numérico</span>
+<span class="kn">import</span> <span class="nn">math</span>                     <span class="c1"># Librería para utilizar símbolos matemáticos como el número pi, que se escribe como math.pi</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span> <span class="c1"># Librería para poder dibujar gráficas</span>
+<span class="kn">from</span> <span class="nn">myst_nb</span> <span class="kn">import</span> <span class="n">glue</span>
+
+<span class="n">g</span><span class="o">=</span><span class="mf">9.81</span>    <span class="c1">#aceleración de la gravedad (m/s^2)</span>
+<span class="n">f</span><span class="o">=</span><span class="mf">0.02</span>    <span class="c1">#factor de fricción de Darcy</span>
+<span class="n">L</span><span class="o">=</span><span class="mi">5</span><span class="o">+</span><span class="mi">500</span>   <span class="c1">#longitud total conductos (m)</span>
+<span class="n">D</span><span class="o">=</span><span class="mf">0.1</span>     <span class="c1">#diámetro conductos (m)</span>
+<span class="n">z1</span><span class="o">=</span><span class="mi">0</span>      <span class="c1">#cota depósito 1 (m)</span>
+<span class="n">z2</span><span class="o">=</span><span class="mi">36</span>     <span class="c1">#cota depósito 2 (m)</span>
+<span class="n">rho</span><span class="o">=</span><span class="mi">1000</span>  <span class="c1">#densidad agua (kg/m^3)</span>
+<span class="n">S</span><span class="o">=</span><span class="n">math</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">D</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="mi">4</span> 
+
+<span class="k">def</span> <span class="nf">h_inst</span><span class="p">(</span><span class="n">Q</span><span class="p">):</span>  <span class="c1">#curva de la instalación          </span>
+    <span class="k">return</span>  <span class="n">z2</span><span class="o">-</span><span class="n">z1</span><span class="o">+</span><span class="n">f</span><span class="o">*</span><span class="n">L</span><span class="o">/</span><span class="p">(</span><span class="n">D</span><span class="o">*</span><span class="mi">2</span><span class="o">*</span><span class="n">g</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">Q</span><span class="o">/</span><span class="n">S</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span> 
+
+<span class="k">def</span> <span class="nf">h_bomba</span><span class="p">(</span><span class="n">Q</span><span class="p">):</span>  <span class="c1">#curva de la bomba (dato)        </span>
+    <span class="k">return</span>  <span class="mi">43</span><span class="o">-</span><span class="mi">40000</span><span class="o">*</span><span class="n">Q</span><span class="o">**</span><span class="mi">2</span>
+
+<span class="n">Lt</span><span class="o">=</span><span class="mf">0.01</span>                       <span class="c1">#longitud del eje X (rango de caudales en m^3/s)</span>
+<span class="n">N</span> <span class="o">=</span> <span class="mi">100</span>                       <span class="c1">#numero de puntos a representar</span>
+<span class="n">xp</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">Lt</span><span class="p">,</span> <span class="n">N</span><span class="p">)</span>    <span class="c1">#puntos en x</span>
+<span class="n">yp1</span> <span class="o">=</span> <span class="n">h_inst</span><span class="p">(</span><span class="n">xp</span><span class="p">)</span>              <span class="c1">#puntos en y: curva instalacion</span>
+<span class="n">yp2</span> <span class="o">=</span> <span class="n">h_bomba</span><span class="p">(</span><span class="n">xp</span><span class="p">)</span>             <span class="c1">#puntos en y: curva bomba</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span>  <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>     <span class="c1">#genera el objeto &quot;fig&quot;</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xp</span><span class="p">,</span><span class="n">yp1</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;Curva resistente de la instalación&#39;</span><span class="p">)</span>                
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Curva de la instalación&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;$Q(m^3/s)$&quot;</span><span class="p">)</span> 
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;$H(m)$&quot;</span><span class="p">)</span> 
+<span class="n">glue</span><span class="p">(</span><span class="s2">&quot;curva1&quot;</span><span class="p">,</span> <span class="n">fig</span><span class="p">,</span> <span class="n">display</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="n">fig2</span><span class="p">,</span> <span class="n">ax</span>  <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">))</span>     <span class="c1">#genera el objeto &quot;fig&quot;</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xp</span><span class="p">,</span><span class="n">yp2</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;Curva de la bomba&#39;</span><span class="p">)</span>                
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Curva de la bomba&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;$Q(m^3/s)$&quot;</span><span class="p">)</span> 
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;$H(m)$&quot;</span><span class="p">)</span> 
+<span class="n">glue</span><span class="p">(</span><span class="s2">&quot;curva2&quot;</span><span class="p">,</span> <span class="n">fig2</span><span class="p">,</span> <span class="n">display</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../../_images/a7023ed1181160e34e8746e51c45a3a89cc6e211b2160a594bd8934a23c84fc1.png" src="../../../_images/a7023ed1181160e34e8746e51c45a3a89cc6e211b2160a594bd8934a23c84fc1.png" />
+<img alt="../../../_images/219be57ba175335898a353656ecdd4f5fe2349f3debfa0ebb8615233711e4c5e.png" src="../../../_images/219be57ba175335898a353656ecdd4f5fe2349f3debfa0ebb8615233711e4c5e.png" />
+</div>
+</details>
+</div>
+<aside class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="note admonition">
+<p class="admonition-title">Curvas</p>
+<p>A la curva <span class="math notranslate nohighlight">\(H_I(Q)\)</span> se le llama <em>curva resistente de la instalación</em> y es una representación gráfica de la altura energética de la instalación, <span class="math notranslate nohighlight">\(H_I\)</span>, frente al caudal:</p>
+<img alt="../../../_images/a7023ed1181160e34e8746e51c45a3a89cc6e211b2160a594bd8934a23c84fc1.png" src="../../../_images/a7023ed1181160e34e8746e51c45a3a89cc6e211b2160a594bd8934a23c84fc1.png" />
+<p>A la curva <span class="math notranslate nohighlight">\(H_B(Q)\)</span> se le llama <em>curva característica de la bomba</em> y es una representación gráfica de la altura energética de la bomba, <span class="math notranslate nohighlight">\(H_B\)</span>, frente al caudal:</p>
+<img alt="../../../_images/219be57ba175335898a353656ecdd4f5fe2349f3debfa0ebb8615233711e4c5e.png" src="../../../_images/219be57ba175335898a353656ecdd4f5fe2349f3debfa0ebb8615233711e4c5e.png" />
+<p>Más adelante veremos que existen otras curvas características de la bomba.</p>
+</div>
+</aside>
+</section>
+<section id="punto-de-operacion">
+<h2>Punto de operación<a class="headerlink" href="#punto-de-operacion" title="Permalink to this heading">#</a></h2>
+<p>Por simplicidad, vamos a considerar el ejemplo de la figura inferior en la que tenemos dos depósitos abiertos a la atmósfera conectados por un conducto en el que hay una bomba.</p>
+<figure class="align-default" id="cap5-fig6">
+<a class="reference internal image-reference" href="../../../_images/inst_nodata.png"><img alt="../../../_images/inst_nodata.png" src="../../../_images/inst_nodata.png" style="width: 300px;" /></a>
+<figcaption>
+<p><span class="caption-text">Instalación sencilla.</span><a class="headerlink" href="#cap5-fig6" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Dividiendo la ecuación de conservación de la energía mecánica por <span class="math notranslate nohighlight">\(\rho g Q\)</span> (donde <span class="math notranslate nohighlight">\(Q\)</span> es el caudal volumétrico) obtenemos la ecuación de la energía mecánica en términos de alturas energéticas:</p>
+<div class="amsmath math notranslate nohighlight" id="equation-33208ffd-7b83-458e-a201-5d4bb3db9d76">
+<span class="eqno">()<a class="headerlink" href="#equation-33208ffd-7b83-458e-a201-5d4bb3db9d76" title="Permalink to this equation">#</a></span>\[\begin{equation}\label{eq:emec_alturas}
+\boxed{
+     \left( \frac{v^2}{2g}+\frac{p}{\rho g}+z  \right)_2  - \left( \frac{v^2}{2g}+\frac{p}{\rho g}+z \right)_1   =  H_B  - H_f
+     }
+\end{equation}\]</div>
+<p>donde la energía aportada por la bomba en términos de altura energética, o <strong>altura de la bomba</strong>, es</p>
+<div class="amsmath math notranslate nohighlight" id="equation-c8a53498-6d3e-458f-b4da-25a4e24cacd8">
+<span class="eqno">()<a class="headerlink" href="#equation-c8a53498-6d3e-458f-b4da-25a4e24cacd8" title="Permalink to this equation">#</a></span>\[\begin{equation}\label{eq:hb_def}
+H_B=\frac{\dot{W}_{a\rightarrow f}}{\rho g Q}
+\end{equation}\]</div>
+<p>y la energía de pérdidas viscosas, o <strong>altura de pérdidas</strong>, es</p>
+<div class="amsmath math notranslate nohighlight" id="equation-76e2424f-5a12-4a36-866a-d38c1e1d763c">
+<span class="eqno">()<a class="headerlink" href="#equation-76e2424f-5a12-4a36-866a-d38c1e1d763c" title="Permalink to this equation">#</a></span>\[\begin{equation}
+H_f=\frac{{\int_{VC} \Phi_v  dV}}{\rho g Q}
+\end{equation}\]</div>
+<p>Por otro lado, el término <span class="math notranslate nohighlight">\(\left( \frac{v^2}{2g}+\frac{p}{\rho g}+z  \right)_2\)</span> es la altura energética a la salida y el término <span class="math notranslate nohighlight">\(\left( \frac{v^2}{2g}+\frac{p}{\rho g}+z \right)_1\)</span> es la altura energética a la entrada.</p>
+<p>Podemos reordenar la ecuación de la energía mecánica en la instalación de la siguiente manera</p>
+<div class="math notranslate nohighlight" id="equation-eq-emec-alturas2">
+<span class="eqno">()<a class="headerlink" href="#equation-eq-emec-alturas2" title="Permalink to this equation">#</a></span>\[     \underbrace{\left( \frac{v^2}{2g}+\frac{p}{\rho g}+z  \right)_2  - \left( \frac{v^2}{2g}+\frac{p}{\rho g}+z \right)_1 + H_f(Q) }_{H_I(Q)}  =  H_B(Q)\]</div>
+<p>dejando a la izquierda de la igualdad todo lo que depende de la instalación y a la derecha todo lo que depende de la bomba, siendo:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(H_I(Q)\)</span>: Función altura de la instalación, una relación entre la altura energética  y el caudal de la instalación. Es la altura energética requerida para mover un caudal <span class="math notranslate nohighlight">\(Q\)</span>. Depende de la instalación (entrada, salida, conductos, elementos singulares…). La calcularemos de la siguiente manera:</p></li>
+</ul>
+<div class="amsmath math notranslate nohighlight" id="equation-a80ec698-1628-4ba4-877e-e01b3714c103">
+<span class="eqno">()<a class="headerlink" href="#equation-a80ec698-1628-4ba4-877e-e01b3714c103" title="Permalink to this equation">#</a></span>\[\begin{equation}\label{eq:curva_inst}
+     H_I(Q)\equiv\left( \frac{v^2}{2g}+\frac{p}{\rho g}+z  \right)_2  - \left( \frac{v^2}{2g}+\frac{p}{\rho g}+z \right)_1 + H_f 
+\end{equation}\]</div>
+<div class="amsmath math notranslate nohighlight" id="equation-11487074-0982-48e6-bfc4-55f04ea0086a">
+<span class="eqno">()<a class="headerlink" href="#equation-11487074-0982-48e6-bfc4-55f04ea0086a" title="Permalink to this equation">#</a></span>\[\begin{equation}\label{eq:perdidas}
+     H_f= H_{L} + \sum H_{S,j} =\left( \frac{fL}{D} + \sum k_{m,j}\right)\frac{Q^2}{2gS^2}
+\end{equation}\]</div>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(H_B(Q)\)</span>: Función altura de la bomba, una relación entre la altura energética  y el caudal de la bomba. Es la altura energética aportada para mover un caudal <span class="math notranslate nohighlight">\(Q\)</span>. Depende de la bomba, proporcionada por el fabricante.</p></li>
+</ul>
+<p>La ecuación <a class="reference internal" href="instalaciones_bombeo.html#equation-eq-emec-alturas2">(5.10)</a> indica lo siguiente: <em>La energía aportada por la bomba (altura de la bomba) debe ser igual a la energía requerida para hacer circular el fluido en la instalación (diferencia de alturas entre salida y entrada más la altura de pérdidas por disipación).</em></p>
+<p>A los términos <span class="math notranslate nohighlight">\(H_I(Q)\)</span> y <span class="math notranslate nohighlight">\(H_B(Q)\)</span> también se les llama <strong>curva resistente de la instalación y curva característica de la bomba</strong>, respectivamente, y se muestran en el margen derecho.</p>
+<div class="hint admonition">
+<p class="admonition-title">Punto de operación de una instalación</p>
+<p>Matemáticamente, el punto de operación es la solución de la ecuación <a class="reference internal" href="instalaciones_bombeo.html#equation-eq-emec-alturas2">(5.10)</a></p>
+<div class="amsmath math notranslate nohighlight" id="equation-5fed400f-9851-4da6-b265-2a116adfd2b8">
+<span class="eqno">()<a class="headerlink" href="#equation-5fed400f-9851-4da6-b265-2a116adfd2b8" title="Permalink to this equation">#</a></span>\[\begin{equation}
+     H_I(Q)=H_B(Q)
+\end{equation}\]</div>
+<p>donde <span class="math notranslate nohighlight">\(H_I(Q)\)</span> es la curva de la instalación y <span class="math notranslate nohighlight">\(H_B(Q)\)</span> es la curva de la máquina, proporcionada por el fabricante.</p>
+<p>Desde un punto de vista gráfico, a la intersección entre la curva resistente de la instalación, <span class="math notranslate nohighlight">\(H_I(Q)\)</span>, y la curva característica de la máquina, <span class="math notranslate nohighlight">\(H_B(Q)\)</span>, se le denomina <strong>punto de operación</strong>. En la figura inferior se representan de manera cualitativa las curvas de la máquina y de la instalación, así como el punto de operación denotado por <span class="math notranslate nohighlight">\((Q^{\star},H^{\star})\)</span>.</p>
+<figure class="align-default" id="cap5-fig5">
+<a class="reference internal image-reference" href="../../../_images/ptop.png"><img alt="../../../_images/ptop.png" src="../../../_images/ptop.png" style="width: 300px;" /></a>
+<figcaption>
+<p><span class="caption-text">Punto de operación</span><a class="headerlink" href="#cap5-fig5" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="curvas-caracteristicas-de-la-bomba">
+<h2>Curvas características de la bomba<a class="headerlink" href="#curvas-caracteristicas-de-la-bomba" title="Permalink to this heading">#</a></h2>
+<p>Las curvas características de las bombas hidráulicas son relaciones funcionales que permiten expresar las variables de interés (altura energética, potencia y rendimiento) en función del caudal. Estas curvas son herramientas fundamentales para entender el comportamiento y el rendimiento de una bomba en diferentes condiciones de operación. Las curvas características de una bomba hidráulica <strong>se obtienen experimentalmente</strong> y son específicas para cada modelo de bomba. Cada bomba tiene su propia curva característica debido a su diseño, tamaño y construcción.</p>
+<p>Antes de explicar las distintas curvas características, es necesario definir el concepto de rendimiento de una bomba hidráulica.</p>
+<div class="hint admonition">
+<p class="admonition-title">Rendimiento de una bomba</p>
+<p>El rendimiento de una bomba hidráulica se define como la relación entre la potencia transmitida al fluido y la potencia en el eje</p>
+<div class="amsmath math notranslate nohighlight" id="equation-64c9d759-e4b2-4617-a286-53742716b67e">
+<span class="eqno">()<a class="headerlink" href="#equation-64c9d759-e4b2-4617-a286-53742716b67e" title="Permalink to this equation">#</a></span>\[\begin{equation}\label{eq:bcar2}
+     \eta= \frac{\dot{W}_{a\rightarrow f}}{\dot{W}_{eje}}=\frac{\rho g Q H_B(Q)}{T\Omega}
+\end{equation}\]</div>
+<p>con <span class="math notranslate nohighlight">\(T\)</span> el par motor y <span class="math notranslate nohighlight">\(\Omega\)</span> la velocidad angular de giro. Este rendimiento también depende del caudal y se ve afectado por las pérdidas hidráulicas y mecánicas, alcanzando un máximo para cierto valor de caudal, denominado caudal de diseño de la máquina.</p>
+</div>
+<p>Mediante el análisis dimensional, es posible expresar los números adimensionales de las variables de interés en función solamente del caudal adimensionalizado, <span class="math notranslate nohighlight">\(\frac{Q}{\Omega D^3}\)</span>, asumiendo semejanza parcial:</p>
+<div class="math notranslate nohighlight">
+\[ \frac{gH_B}{\Omega^2D^2}=\Pi_1\left(\frac{Q}{\Omega D^3} \right), \quad \eta=\Pi_2\left(\frac{Q}{\Omega D^3} \right), \quad \frac{\dot{W} }{\rho\Omega^3D^5}=\Pi_3\left(\frac{Q}{\Omega D^3} \right) \]</div>
+<p>En la Figura inferior se muestran la forma habitual de las curvas características en forma adimensional para la altura energética, la potencia y el rendimiento.</p>
+<figure class="align-default" id="id2">
+<a class="reference internal image-reference" href="../../../_images/curvasC.png"><img alt="../../../_images/curvasC.png" src="../../../_images/curvasC.png" style="width: 300px;" /></a>
+<figcaption>
+<p><span class="caption-text">Curvas características en forma adimensional.</span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Desde un punto de vista práctico, lo más habitual es trabajar con la forma dimensional de las curvas características. Estas curvas en forma dimensional se obtienen fijando un valor de <span class="math notranslate nohighlight">\(\Omega\)</span> y de <span class="math notranslate nohighlight">\(D\)</span>, lo que permite representar las variables de interés frente al caudal. Se trabajará con las siguientes:</p>
+<ul class="simple">
+<li><p>Curva de altura-caudal, <span class="math notranslate nohighlight">\(H_{B}(Q)\)</span>: representa la altura energética aportada en función del caudal <span class="math notranslate nohighlight">\(Q\)</span>.</p></li>
+<li><p>Curva de rendimiento, <span class="math notranslate nohighlight">\(\eta(Q)\)</span>: representa el rendimiento de la bomba en función del caudal <span class="math notranslate nohighlight">\(Q\)</span>.</p></li>
+<li><p>Curva de potencia, <span class="math notranslate nohighlight">\(\dot{W}_{eje}(Q)\)</span>: representa la potencia de accionamiento en el eje de la bomba en función del caudal <span class="math notranslate nohighlight">\(Q\)</span>.</p></li>
+<li><p>Curva NPSHR (Net Positive Suction Head Required): representa altura energética neta positiva de aspiración requerida, en función del caudal <span class="math notranslate nohighlight">\(Q\)</span>. Es decir, la energía mínima necesaria que el fluido debe tener, en la toma aspiración de la bomba, para garantizar un funcionamiento adecuado. El objetivo es garantizar que la presión de aspiración sea superior a la presión de vapor del líquido en la entrada del rodete, evitando así la cavitación.</p></li>
+</ul>
+<p>A continuación se muestra la forma típica de estas cuatro curvas características en su forma dimensional.</p>
+<div class="cell tag_hide-cell docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell content</span>
+<span class="expanded">Hide code cell content</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">g</span><span class="o">=</span><span class="mf">9.81</span>    <span class="c1">#aceleración de la gravedad (m/s^2)</span>
+<span class="n">f</span><span class="o">=</span><span class="mf">0.02</span>    <span class="c1">#factor de fricción de Darcy</span>
+<span class="n">L</span><span class="o">=</span><span class="mi">5</span><span class="o">+</span><span class="mi">500</span>   <span class="c1">#longitud total conductos (m)</span>
+<span class="n">D</span><span class="o">=</span><span class="mf">0.1</span>     <span class="c1">#diámetro conductos (m)</span>
+<span class="n">z1</span><span class="o">=</span><span class="mi">0</span>      <span class="c1">#cota depósito 1 (m)</span>
+<span class="n">z2</span><span class="o">=</span><span class="mi">36</span>     <span class="c1">#cota depósito 2 (m)</span>
+<span class="n">rho</span><span class="o">=</span><span class="mi">1000</span>  <span class="c1">#densidad agua (kg/m^3)</span>
+<span class="n">S</span><span class="o">=</span><span class="n">math</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">D</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="mi">4</span> 
+
+<span class="k">def</span> <span class="nf">h_bomba</span><span class="p">(</span><span class="n">Q</span><span class="p">):</span>  <span class="c1">#curva de la bomba (dato)        </span>
+    <span class="k">return</span>  <span class="mi">43</span><span class="o">-</span><span class="mi">40000</span><span class="o">*</span><span class="n">Q</span><span class="o">**</span><span class="mi">2</span>
+
+<span class="k">def</span> <span class="nf">rendimiento</span><span class="p">(</span><span class="n">Q</span><span class="p">):</span>        
+    <span class="k">return</span>  <span class="mi">180</span><span class="o">*</span><span class="n">Q</span><span class="o">-</span><span class="mi">10000</span><span class="o">*</span><span class="n">Q</span><span class="o">**</span><span class="mi">2</span>
+
+<span class="k">def</span> <span class="nf">potencia_eje</span><span class="p">(</span><span class="n">Q</span><span class="p">):</span>
+    <span class="n">potencia_fluido</span> <span class="o">=</span> <span class="n">rho</span><span class="o">*</span><span class="n">g</span><span class="o">*</span><span class="n">h_bomba</span><span class="p">(</span><span class="n">Q</span><span class="p">)</span><span class="o">*</span><span class="n">Q</span>
+    <span class="k">return</span>  <span class="n">potencia_fluido</span><span class="o">/</span><span class="n">rendimiento</span><span class="p">(</span><span class="n">Q</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">npshr</span><span class="p">(</span><span class="n">Q</span><span class="p">):</span>  <span class="c1">#curva de la bomba (dato)        </span>
+    <span class="k">return</span>  <span class="mi">35</span><span class="o">-</span><span class="p">(</span><span class="mi">43</span><span class="o">-</span><span class="mi">35</span><span class="p">)</span><span class="o">+</span><span class="mi">40000</span><span class="o">*</span><span class="n">Q</span><span class="o">**</span><span class="mi">2</span>
+
+<span class="n">Lt</span><span class="o">=</span><span class="mf">0.014</span>                       <span class="c1">#longitud del eje X (rango de caudales en m^3/s)</span>
+<span class="n">N</span> <span class="o">=</span> <span class="mi">100</span>                       <span class="c1">#numero de puntos a representar</span>
+<span class="n">xp</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mf">0.0001</span><span class="p">,</span> <span class="n">Lt</span><span class="p">,</span> <span class="n">N</span><span class="p">)</span>    <span class="c1">#puntos en x</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span>  <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>     <span class="c1">#genera el objeto &quot;fig&quot;</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xp</span><span class="p">,</span><span class="n">h_bomba</span><span class="p">(</span><span class="n">xp</span><span class="p">))</span>                
+<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Curva de altura energética&#39;</span><span class="p">)</span>
+<span class="c1">#ax[0,0].set_xlabel(&quot;$Q(m^3/s)$&quot;) </span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;$H(m)$&quot;</span><span class="p">)</span> 
+
+
+<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xp</span><span class="p">,</span><span class="n">rendimiento</span><span class="p">(</span><span class="n">xp</span><span class="p">),</span><span class="n">color</span><span class="o">=</span><span class="s2">&quot;tab:red&quot;</span><span class="p">)</span>                
+<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Curva de rendimiento&#39;</span><span class="p">)</span>
+<span class="c1">#ax[0,1].set_xlabel(&quot;$Q(m^3/s)$&quot;) </span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;$\eta$&#39;</span><span class="p">)</span> 
+
+
+<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xp</span><span class="p">,</span><span class="n">potencia_eje</span><span class="p">(</span><span class="n">xp</span><span class="p">)</span><span class="o">*</span><span class="mf">0.001</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s2">&quot;tab:green&quot;</span><span class="p">)</span>                
+<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Curva de potencia&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;$Q(m^3/s)$&quot;</span><span class="p">)</span> 
+<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;$\dot</span><span class="si">{W}</span><span class="s1">_</span><span class="si">{eje}</span><span class="s1">(kW)$&#39;</span><span class="p">)</span> 
+
+<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xp</span><span class="p">,</span><span class="n">npshr</span><span class="p">(</span><span class="n">xp</span><span class="p">),</span><span class="n">color</span><span class="o">=</span><span class="s2">&quot;tab:brown&quot;</span><span class="p">)</span>                
+<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Curva NPSHR&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;$Q(m^3/s)$&quot;</span><span class="p">)</span> 
+<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;NPSHR(m)&#39;</span><span class="p">)</span> 
+
+<span class="n">glue</span><span class="p">(</span><span class="s2">&quot;curvasCaract&quot;</span><span class="p">,</span> <span class="n">fig</span><span class="p">,</span> <span class="n">display</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../../_images/dfed705c0b47bfaa9b779602009a8e0d1871ede8c43ccd4253419afd85fe37f3.png" src="../../../_images/dfed705c0b47bfaa9b779602009a8e0d1871ede8c43ccd4253419afd85fe37f3.png" />
+</div>
+</details>
+</div>
+<img alt="../../../_images/dfed705c0b47bfaa9b779602009a8e0d1871ede8c43ccd4253419afd85fe37f3.png" src="../../../_images/dfed705c0b47bfaa9b779602009a8e0d1871ede8c43ccd4253419afd85fe37f3.png" />
+<p>Las representaciones gráficas anteriores son cualitativas y se han hecho utilizando funciones matemáticas sencillas con las que hemos aproximado las curvas de la bomba. Como se ha indicado anteriormente, las curvas características de una bomba hidráulica se obtienen experimentalmente en un banco de ensayos y son específicas para cada modelo de bomba. Cada bomba tiene su propia curva característica debido a su diseño, tamaño y construcción. Es el fabricante quien debe proporcionar las curvas características de cada modelo de bomba. A continuación se muestra un ejemplo hoja de características de una bomba centrífuga real, en concreto para el modelo <em>Lowara e-SHE 65-160/55/P25VSNA 5,5 KW. 400/690 V</em>.</p>
+<figure class="align-default" id="id3">
+<a class="reference internal image-reference" href="../../../_images/bomba_real.png"><img alt="../../../_images/bomba_real.png" src="../../../_images/bomba_real.png" style="width: 700px;" /></a>
+<figcaption>
+<p><span class="caption-text">Hoja de características de una bomba centrifuga Lowara modelo e-SHE 65-160/55/P25VSNA 5,5 KW. 400/690 V.  <a class="reference download internal" download="" href="../../../_downloads/b6aae1004019387c624c04e2fc44c6c8/curvasSH2P.pdf"><span class="xref download myst">Click aqui</span></a> para descagrar la hoja de características.</span><a class="headerlink" href="#id3" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="aplicacion-realista">
+<h2>Aplicación realista<a class="headerlink" href="#aplicacion-realista" title="Permalink to this heading">#</a></h2>
+<p>Para entender mejor estos conceptos, vamos a considerar el siguiente ejemplo.</p>
+<aside class="topic">
+<p class="topic-title">Ejemplo numérico</p>
+<p>Considere una instalación de bombeo de agua entre dos depósitos con una diferencia de cota geométrica entre ellos de 36 metros. Los depósitos se conectan a través de una línea compuesta por dos tramos de 5 m (entre el depósito 1 y la bomba) y 500 m (entre la bomba y el depósito 2) respectivamente. Se dispone de un conducto de sección circular (<span class="math notranslate nohighlight">\(D=0.1\)</span> m), para el que asumiremos un factor de fricción constante de <span class="math notranslate nohighlight">\(f=0.02\)</span>. Se consideran nulas las pérdidas singulares. Para esta instalación se ha escogido una bomba cuyas curvas características proporcionadas por el fabricante son <span class="math notranslate nohighlight">\(H_{B}(Q)=43-40000Q^2\)</span> y <span class="math notranslate nohighlight">\(\eta(Q)=180Q-10000Q^2\)</span> (unidades en m y m<span class="math notranslate nohighlight">\(^3\)</span>/s).</p>
+<figure class="align-default" id="id4">
+<a class="reference internal image-reference" href="../../../_images/instalacionP1.png"><img alt="../../../_images/instalacionP1.png" src="../../../_images/instalacionP1.png" style="width: 300px;" /></a>
+<figcaption>
+<p><span class="caption-text">Instalación del caso de ejemplo.</span><a class="headerlink" href="#id4" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</aside>
+<p>Para calcular en punto de operación igualaremos la curva de la bomba a la curva de la instalación</p>
+<div class="math notranslate nohighlight">
+\[H_B(Q)=H_I(Q)\]</div>
+<p>es decir</p>
+<div class="math notranslate nohighlight">
+\[43-40000Q^2=z_2-z_1 + \frac{fL}{D} \frac{Q^2}{2gS^2}\]</div>
+<p>y resolveremos la ecuación.</p>
+<p>En Python, definiremos las funciones <code class="docutils literal notranslate"><span class="pre">h_inst(Q)</span></code> y <code class="docutils literal notranslate"><span class="pre">h_bomba(Q)</span></code> y resolveremos el punto de operación utilizando la función <code class="docutils literal notranslate"><span class="pre">solve()</span></code>:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">##Datos del problema</span>
+<span class="n">g</span><span class="o">=</span><span class="mf">9.81</span>    <span class="c1">#aceleración de la gravedad (m/s^2)</span>
+<span class="n">f</span><span class="o">=</span><span class="mf">0.02</span>    <span class="c1">#factor de fricción de Darcy</span>
+<span class="n">L</span><span class="o">=</span><span class="mi">5</span><span class="o">+</span><span class="mi">500</span>   <span class="c1">#longitud total conductos (m)</span>
+<span class="n">D</span><span class="o">=</span><span class="mf">0.1</span>     <span class="c1">#diámetro conductos (m)</span>
+<span class="n">z1</span><span class="o">=</span><span class="mi">0</span>      <span class="c1">#cota depósito 1 (m)</span>
+<span class="n">z2</span><span class="o">=</span><span class="mi">36</span>     <span class="c1">#cota depósito 2 (m)</span>
+<span class="n">rho</span><span class="o">=</span><span class="mi">1000</span>  <span class="c1">#densidad agua (kg/m^3)</span>
+
+<span class="c1">#calculamos la sección de los conductos</span>
+<span class="n">S</span><span class="o">=</span><span class="n">math</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">D</span><span class="o">**</span><span class="mi">2</span><span class="o">/</span><span class="mi">4</span> 
+
+<span class="n">Q</span><span class="o">=</span><span class="n">symbols</span><span class="p">(</span><span class="s1">&#39;Q&#39;</span><span class="p">)</span>
+
+<span class="k">def</span> <span class="nf">h_inst</span><span class="p">(</span><span class="n">Q</span><span class="p">):</span>  <span class="c1">#curva de la instalación          </span>
+    <span class="k">return</span>  <span class="n">z2</span><span class="o">-</span><span class="n">z1</span><span class="o">+</span><span class="n">f</span><span class="o">*</span><span class="n">L</span><span class="o">/</span><span class="p">(</span><span class="n">D</span><span class="o">*</span><span class="mi">2</span><span class="o">*</span><span class="n">g</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">Q</span><span class="o">/</span><span class="n">S</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span> 
+
+<span class="k">def</span> <span class="nf">h_bomba</span><span class="p">(</span><span class="n">Q</span><span class="p">):</span>  <span class="c1">#curva de la bomba (dato)        </span>
+    <span class="k">return</span>  <span class="mi">43</span><span class="o">-</span><span class="mi">40000</span><span class="o">*</span><span class="n">Q</span><span class="o">**</span><span class="mi">2</span>
+
+<span class="c1">#Punto de operación</span>
+<span class="n">sol</span><span class="o">=</span><span class="n">solve</span><span class="p">(</span><span class="n">h_inst</span><span class="p">(</span><span class="n">Q</span><span class="p">)</span><span class="o">-</span><span class="n">h_bomba</span><span class="p">(</span><span class="n">Q</span><span class="p">),</span><span class="n">Q</span><span class="p">)</span> <span class="c1">#para ello utilizamos la función solve(ecuacion,variable), que permite resolver ecuaciones algebraicas</span>
+<span class="n">Qp</span><span class="o">=</span><span class="n">sol</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>     <span class="c1">#la ecuación anterior es cuadrática y tiene 2 soluciones, nos quedamos con la segunda (la positiva)</span>
+<span class="n">hp</span><span class="o">=</span><span class="n">h_inst</span><span class="p">(</span><span class="n">Qp</span><span class="p">)</span> <span class="c1">#evaluamos la curva de la instalación (o de la bomba) en Qp</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;La curva resistente de la instalación es:&quot;</span><span class="p">,</span><span class="n">h_inst</span><span class="p">(</span><span class="n">Q</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;La curva de la bomba es:&quot;</span><span class="p">,</span><span class="n">h_bomba</span><span class="p">(</span><span class="n">Q</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Las soluciones de la ecuación son Q =&quot;</span><span class="p">,</span><span class="n">sol</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;El punto de operación es: Qp=&quot;</span><span class="p">,</span><span class="n">Qp</span><span class="p">,</span><span class="s2">&quot;m^3/s y hp=&quot;</span><span class="p">,</span><span class="n">hp</span><span class="p">,</span><span class="s2">&quot;m&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>La curva resistente de la instalación es: 83453.12577269*Q**2 + 36
+La curva de la bomba es: 43 - 40000*Q**2
+Las soluciones de la ecuación son Q = [-0.00753005199028064, 0.00753005199028064]
+El punto de operación es: Qp= 0.00753005199028064 m^3/s y hp= 40.7319326809468 m
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_hide-cell docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell content</span>
+<span class="expanded">Hide code cell content</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Lt</span><span class="o">=</span><span class="mf">0.01</span>                       <span class="c1">#longitud del eje X (rango de caudales en m^3/s)</span>
+<span class="n">N</span> <span class="o">=</span> <span class="mi">100</span>                       <span class="c1">#numero de puntos a representar</span>
+<span class="n">xp</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">Lt</span><span class="p">,</span> <span class="n">N</span><span class="p">)</span>    <span class="c1">#puntos en x</span>
+<span class="n">yp1</span> <span class="o">=</span> <span class="n">h_inst</span><span class="p">(</span><span class="n">xp</span><span class="p">)</span>              <span class="c1">#puntos en y: curva instalacion</span>
+<span class="n">yp2</span> <span class="o">=</span> <span class="n">h_bomba</span><span class="p">(</span><span class="n">xp</span><span class="p">)</span>             <span class="c1">#puntos en y: curva bomba</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span>  <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">7</span><span class="p">))</span>     <span class="c1">#genera el objeto &quot;fig&quot;</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xp</span><span class="p">,</span><span class="n">yp1</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;Curva resistente de la instalación&#39;</span><span class="p">)</span>        
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xp</span><span class="p">,</span><span class="n">yp2</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;Curva característica de la bomba&#39;</span><span class="p">)</span>          
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">Qp</span><span class="p">,</span><span class="n">hp</span><span class="p">,</span><span class="s1">&#39;o&#39;</span><span class="p">)</span> 
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span><span class="n">Qp</span><span class="p">],[</span><span class="n">hp</span><span class="p">,</span><span class="n">hp</span><span class="p">],</span><span class="s1">&#39;g--&#39;</span><span class="p">)</span>   
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="n">Qp</span><span class="p">,</span><span class="n">Qp</span><span class="p">],[</span><span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">yp1</span><span class="p">),</span><span class="n">hp</span><span class="p">],</span><span class="s1">&#39;g--&#39;</span><span class="p">)</span>  
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Curvas bomba/instalación&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;$Q(m^3/s)$&quot;</span><span class="p">)</span> 
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;$H(m)$&quot;</span><span class="p">)</span> 
+<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">glue</span><span class="p">(</span><span class="s2">&quot;curva_pto&quot;</span><span class="p">,</span> <span class="n">fig</span><span class="p">,</span> <span class="n">display</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../../_images/c7165b7649959f2c17ce8333f6c503f13205e192d30e4b0e232518e4bccc3f69.png" src="../../../_images/c7165b7649959f2c17ce8333f6c503f13205e192d30e4b0e232518e4bccc3f69.png" />
+</div>
+</details>
+</div>
+<img alt="../../../_images/c7165b7649959f2c17ce8333f6c503f13205e192d30e4b0e232518e4bccc3f69.png" src="../../../_images/c7165b7649959f2c17ce8333f6c503f13205e192d30e4b0e232518e4bccc3f69.png" />
+<p>Otro cálculo de interés ingenieril es la <strong>potencia a suministrar a la bomba (potencia en el eje)</strong>. Para ello, primero evaluaremos el rendimiento para el caudal obtenido (punto de operación)</p>
+<div class="math notranslate nohighlight">
+\[\eta(Q_p)=180Q-10000Q_p^2\]</div>
+<p>y después hallaremos la potencia en el eje utilizando la definición de rendimiento</p>
+<div class="math notranslate nohighlight">
+\[\eta(Q_p)=\frac{\rho g Q_p H_p}{\dot{W}_{eje}}\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">rendimiento</span><span class="p">(</span><span class="n">Q</span><span class="p">):</span>        
+    <span class="k">return</span>  <span class="mi">180</span><span class="o">*</span><span class="n">Q</span><span class="o">-</span><span class="mi">10000</span><span class="o">*</span><span class="n">Q</span><span class="o">**</span><span class="mi">2</span>
+
+<span class="n">rto</span> <span class="o">=</span> <span class="n">rendimiento</span><span class="p">(</span><span class="n">Qp</span><span class="p">)</span>
+<span class="n">potencia_fluido</span> <span class="o">=</span> <span class="n">rho</span><span class="o">*</span><span class="n">g</span><span class="o">*</span><span class="n">hp</span><span class="o">*</span><span class="n">Qp</span>
+<span class="n">potencia_eje</span> <span class="o">=</span> <span class="n">potencia_fluido</span><span class="o">/</span><span class="n">rto</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;El rendimiento es:&quot;</span><span class="p">,</span><span class="n">rto</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Potencia fluido:&quot;</span><span class="p">,</span><span class="n">potencia_fluido</span><span class="p">,</span> <span class="s2">&quot;W&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Potencia eje:&quot;</span><span class="p">,</span><span class="n">potencia_eje</span><span class="p">,</span><span class="s2">&quot; W&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>El rendimiento es: 0.788392528487221
+Potencia fluido: 3008.86012907850 W
+Potencia eje: 3816.44931979752  W
+</pre></div>
+</div>
+</div>
+</div>
+<p>Y llegados a este punto uno uede preguntarse, <strong>¿es esta bomba adecuada para la instalación?</strong>. Para saber si hemos elegido bien una bomba, debemos examinar si el punto de operación está cerca del punto de máxima eficiencia (best efficiency point, BEP). Para ello, podemos calcular este punto numéricamente buscando el máximo de la curva de rendimiento:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sol</span><span class="o">=</span><span class="n">solve</span><span class="p">(</span><span class="n">diff</span><span class="p">(</span><span class="n">rendimiento</span><span class="p">(</span><span class="n">Q</span><span class="p">),</span><span class="n">Q</span><span class="p">))</span>
+<span class="n">Qmax</span><span class="o">=</span><span class="n">sol</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">rtomax</span><span class="o">=</span><span class="n">rendimiento</span><span class="p">(</span><span class="n">Qmax</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;El caudal para el cual el rendimiento es máximo es:&quot;</span><span class="p">,</span><span class="nb">float</span><span class="p">(</span><span class="n">Qmax</span><span class="p">),</span> <span class="s2">&quot;m^3/s&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;El rendimiento máximo es:&quot;</span><span class="p">,</span><span class="nb">float</span><span class="p">(</span><span class="n">rtomax</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>El caudal para el cual el rendimiento es máximo es: 0.009 m^3/s
+El rendimiento máximo es: 0.81
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_hide-cell docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell content</span>
+<span class="expanded">Hide code cell content</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">fig</span><span class="p">,</span> <span class="n">ax</span>  <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">7</span><span class="p">))</span> 
+
+<span class="n">Lt</span><span class="o">=</span><span class="mf">0.01</span>                          
+<span class="n">N</span> <span class="o">=</span> <span class="mi">100</span>                      
+<span class="n">xp</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">Lt</span><span class="p">,</span> <span class="n">N</span><span class="p">)</span>     
+<span class="n">yp1</span> <span class="o">=</span> <span class="n">h_inst</span><span class="p">(</span><span class="n">xp</span><span class="p">)</span>
+<span class="n">yp2</span> <span class="o">=</span> <span class="n">h_bomba</span><span class="p">(</span><span class="n">xp</span><span class="p">)</span>
+<span class="n">yp3</span> <span class="o">=</span> <span class="n">rendimiento</span><span class="p">(</span><span class="n">xp</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xp</span><span class="p">,</span><span class="n">yp1</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;Curva de la instalación&#39;</span><span class="p">)</span>        
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xp</span><span class="p">,</span><span class="n">yp2</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;Curva de la bomba&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">Qp</span><span class="p">,</span><span class="n">hp</span><span class="p">,</span><span class="s1">&#39;o&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;Punto de operación actual&#39;</span><span class="p">)</span> 
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">Qmax</span><span class="p">,</span><span class="n">h_bomba</span><span class="p">(</span><span class="n">Qmax</span><span class="p">),</span><span class="s1">&#39;*&#39;</span><span class="p">,</span><span class="n">ms</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s2">&quot;tab:green&quot;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;Punto de operación nominal&#39;</span><span class="p">)</span> 
+
+
+<span class="n">ax2</span> <span class="o">=</span> <span class="n">ax</span><span class="o">.</span><span class="n">twinx</span><span class="p">()</span>  
+<span class="n">color</span> <span class="o">=</span> <span class="s1">&#39;tab:red&#39;</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;$\eta$&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">color</span><span class="p">)</span>  
+<span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xp</span><span class="p">,</span><span class="n">yp3</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">color</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;Rendimiento&#39;</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">Qp</span><span class="p">,</span><span class="n">rto</span><span class="p">,</span><span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">color</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">Qmax</span><span class="p">,</span><span class="n">rtomax</span><span class="p">,</span><span class="s1">&#39;*&#39;</span><span class="p">,</span><span class="n">ms</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">color</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="n">labelcolor</span><span class="o">=</span><span class="n">color</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Curvas bomba/instalación&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;$Q(m^3/s)$&quot;</span><span class="p">)</span> 
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;$H(m)$&quot;</span><span class="p">)</span> 
+<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="s1">&#39;lower right&#39;</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">glue</span><span class="p">(</span><span class="s2">&quot;curva_pto2&quot;</span><span class="p">,</span> <span class="n">fig</span><span class="p">,</span> <span class="n">display</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../../_images/251dcb9e1e077f48d5bada1e0a736c855af571225f9e6c951bf6f36097e97f62.png" src="../../../_images/251dcb9e1e077f48d5bada1e0a736c855af571225f9e6c951bf6f36097e97f62.png" />
+</div>
+</details>
+</div>
+<img alt="../../../_images/251dcb9e1e077f48d5bada1e0a736c855af571225f9e6c951bf6f36097e97f62.png" src="../../../_images/251dcb9e1e077f48d5bada1e0a736c855af571225f9e6c951bf6f36097e97f62.png" />
+<div class="cell tag_hide-cell docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell content</span>
+<span class="expanded">Hide code cell content</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">k_valvula</span><span class="o">=</span><span class="mi">0</span>
+
+<span class="k">def</span> <span class="nf">h_inst2</span><span class="p">(</span><span class="n">Q</span><span class="p">):</span>
+    <span class="k">return</span>  <span class="n">z2</span><span class="o">-</span><span class="n">z1</span><span class="o">+</span><span class="p">(</span><span class="n">f</span><span class="o">*</span><span class="n">L</span><span class="o">/</span><span class="n">D</span><span class="o">+</span><span class="n">k_valvula</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">g</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">Q</span><span class="o">/</span><span class="n">S</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span>
+
+<span class="c1">#Obtenemos el punto de operación</span>
+<span class="n">sol</span><span class="o">=</span><span class="n">solve</span><span class="p">(</span><span class="n">h_inst2</span><span class="p">(</span><span class="n">Q</span><span class="p">)</span><span class="o">-</span><span class="n">h_bomba</span><span class="p">(</span><span class="n">Q</span><span class="p">),</span><span class="n">Q</span><span class="p">)</span>
+<span class="n">Qp</span><span class="o">=</span><span class="n">sol</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">hp</span><span class="o">=</span><span class="n">h_bomba</span><span class="p">(</span><span class="n">Qp</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;La nueva curva de la instalación es:&quot;</span><span class="p">,</span><span class="n">h_inst2</span><span class="p">(</span><span class="n">Q</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;La curva de la bomba es:&quot;</span><span class="p">,</span><span class="n">h_bomba</span><span class="p">(</span><span class="n">Q</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;El punto de operación es: Qp=&quot;</span><span class="p">,</span><span class="n">Qp</span><span class="p">,</span><span class="s2">&quot;m^3/s y hp=&quot;</span><span class="p">,</span><span class="n">hp</span><span class="p">,</span><span class="s2">&quot;m&quot;</span><span class="p">)</span>
+
+<span class="n">LL</span><span class="o">=</span><span class="mf">0.01</span>
+<span class="n">N</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="n">xp</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">LL</span><span class="p">,</span> <span class="n">N</span><span class="p">)</span>
+<span class="n">yp1</span> <span class="o">=</span> <span class="n">h_inst</span><span class="p">(</span><span class="n">xp</span><span class="p">)</span>
+<span class="n">yp2</span> <span class="o">=</span> <span class="n">h_bomba</span><span class="p">(</span><span class="n">xp</span><span class="p">)</span>
+<span class="n">yp3</span> <span class="o">=</span> <span class="n">h_inst2</span><span class="p">(</span><span class="n">xp</span><span class="p">)</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span>  <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span><span class="mi">7</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xp</span><span class="p">,</span><span class="n">yp1</span><span class="p">,</span><span class="s1">&#39;tab:blue&#39;</span><span class="p">,</span><span class="n">label</span><span class="o">=</span><span class="s1">&#39;Sin válvula ($k_v=0$)&#39;</span><span class="p">,</span><span class="n">lw</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xp</span><span class="p">,</span><span class="n">yp2</span><span class="p">,</span><span class="s1">&#39;tab:orange&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">Qp</span><span class="p">,</span><span class="n">hp</span><span class="p">,</span><span class="s1">&#39;o&#39;</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">14</span><span class="p">,</span><span class="mi">1</span><span class="p">):</span>  <span class="c1">#hacemos un bucle para pintar varias curvas</span>
+    <span class="n">k_valvula</span><span class="o">=</span><span class="mi">20</span><span class="o">*</span><span class="n">i</span><span class="o">**</span><span class="mi">2</span>
+    <span class="n">yp3</span> <span class="o">=</span> <span class="n">h_inst2</span><span class="p">(</span><span class="n">xp</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">xp</span><span class="p">,</span><span class="n">yp3</span><span class="p">,</span><span class="s1">&#39;--&#39;</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;tab:blue&#39;</span><span class="p">)</span>
+    <span class="n">sol</span><span class="o">=</span><span class="n">solve</span><span class="p">(</span><span class="n">h_inst2</span><span class="p">(</span><span class="n">Q</span><span class="p">)</span><span class="o">-</span><span class="n">h_bomba</span><span class="p">(</span><span class="n">Q</span><span class="p">),</span><span class="n">Q</span><span class="p">)</span>
+    <span class="n">Qp</span><span class="o">=</span><span class="n">sol</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+    <span class="n">hp</span><span class="o">=</span><span class="n">h_bomba</span><span class="p">(</span><span class="n">Qp</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">Qp</span><span class="p">,</span><span class="n">hp</span><span class="p">,</span><span class="s1">&#39;o&#39;</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s1">&#39;tab:blue&#39;</span><span class="p">)</span>
+
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Curvas bomba/instalación&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;$Q(m^3/s)$&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;$H(m)$&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">annotate</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">xy</span><span class="o">=</span><span class="p">(</span><span class="mf">0.004</span><span class="p">,</span> <span class="mi">41</span><span class="p">),</span> <span class="n">xytext</span><span class="o">=</span><span class="p">(</span><span class="mf">0.006</span><span class="p">,</span> <span class="mi">40</span><span class="p">),</span><span class="n">arrowprops</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;arrowstyle&#39;</span><span class="p">:</span><span class="s1">&#39;-&gt;&#39;</span><span class="p">,</span><span class="s1">&#39;lw&#39;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span> <span class="s1">&#39;color&#39;</span><span class="p">:</span> <span class="s1">&#39;tab:green&#39;</span><span class="p">,</span> <span class="s1">&#39;alpha&#39;</span><span class="p">:</span> <span class="mf">1.0</span><span class="p">})</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylim</span><span class="p">([</span><span class="nb">min</span><span class="p">(</span><span class="n">yp1</span><span class="p">),</span> <span class="nb">max</span><span class="p">(</span><span class="n">yp1</span><span class="p">)])</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">glue</span><span class="p">(</span><span class="s2">&quot;curva_pto3&quot;</span><span class="p">,</span> <span class="n">fig</span><span class="p">,</span> <span class="n">display</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>La nueva curva de la instalación es: 83453.12577269*Q**2 + 36
+La curva de la bomba es: 43 - 40000*Q**2
+El punto de operación es: Qp= 0.00753005199028064 m^3/s y hp= 40.7319326809468 m
+</pre></div>
+</div>
+<img alt="../../../_images/3b4a6497cc8ef7f2ee84a1abe55cc6d99bb32ccad944f1b2c670a9d53bc8b801.png" src="../../../_images/3b4a6497cc8ef7f2ee84a1abe55cc6d99bb32ccad944f1b2c670a9d53bc8b801.png" />
+</div>
+</details>
+</div>
+<img alt="../../../_images/251dcb9e1e077f48d5bada1e0a736c855af571225f9e6c951bf6f36097e97f62.png" src="../../../_images/251dcb9e1e077f48d5bada1e0a736c855af571225f9e6c951bf6f36097e97f62.png" />
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./content\chapter1\tema5"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+            </article>
+            
+
+            
+            
+            <footer class="bd-footer-article">
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            </footer>
+            
+          </div>
+          
+          
+          
+            <div class="bd-sidebar-secondary bd-toc">
+              
+<div class="toc-item">
+  
+<div class="tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+</div>
+<nav id="bd-toc-nav" class="page-toc">
+    <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#introduccion">
+   Introducción
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#balance-energetico-en-la-instalacion">
+   Balance energético en la instalación
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#punto-de-operacion">
+   Punto de operación
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#curvas-caracteristicas-de-la-bomba">
+   Curvas características de la bomba
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#aplicacion-realista">
+   Aplicación realista
+  </a>
+ </li>
+</ul>
+
+</nav>
+</div>
+
+            </div>
+          
+          
+        </div>
+        <footer class="bd-footer-content">
+          <div class="bd-footer-content__inner">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Adrian Navas Montilla
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+<p class="copyright">
+
+    &copy; Copyright 2023-2024.<br>
+
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    <p class="last-updated">
+Last updated on None.<br>
+</p>
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </div>
+        </footer>
+        
+
+      </main>
+    </div>
+  </div>
+
+  
+    
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/bootstrap.js?digest=796348d33e8b1d947c94"></script>
+<script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=796348d33e8b1d947c94"></script>
+
+  </body>
+</html>
